@@ -1,1 +1,3 @@
-# Praxis-Park
+# Praxus-Park
+This system was created according to our graduate project
+
