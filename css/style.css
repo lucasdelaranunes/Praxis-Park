@@ -36,18 +36,18 @@
 	overflow: hidden;
 }
 
-#label-total {
+.label-title {
 	font-size: 1.6em;
 	color: #1f6aac;
 	margin-bottom: 0px;
 }
 
-#label-data {
-	margin-bottom: 0px;
-} 
+.label-simple {
+	margin-bottom: 0px;	
+}
 
-#label-time {
-	margin-bottom: 0px;
+.label-subtitle {
+	font-size: 0.8em;
 }
 
 #payment-value {

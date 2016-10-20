@@ -41,37 +41,14 @@
 			</div>
 		</div>
 
-		<div class="row text-center">
-			<p class="label-title">Pagamento Débito</p>
-			<p class="label-subtitle">Complete as informações abaixo para realizar o pagamento</p>
+		<div class="payment-result text-center">
+			<img src="img/payment-succes.png" id="succes-logo">
+			<p>Pagamento realizado com sucesso</p>
+		</div>
 
-			<form>
-				<div class="row">
-					<label for="card-number">Número do cartão:</label>
-				</div>
-				<div class="row">
-					<input type="text" name="card-number">
-				</div>
-
-				<div class="row">
-					<label for="card-date">Data de validade:</label>
-				</div>
-
-				<div class="row">
-					<input type="text" name="card-date-month" placeholder="Mês" class="col-xs-6"> 
-					<input type="text" name="card-date-year" placeholder="Ano" class="col-xs-6">
-				</div>
-				
-				<div class="row">
-					<label for="card-number-verify">Código verificador</label>
-				</div>
-
-				<div class="row">
-					<input type="text" name="card-number-verify">
-				</div>
-
-				<input type="submit" name="Confirmar Pagamento" class="btn btn-primary btn-block">
-			</form>
+		<div class="payment-buttons">
+			<button class="btn btn btn-primary btn-block">Enviar comprovante por e-mail</button>
+			<button class="btn btn btn-primary btn-block">Sair</button>
 		</div>
 	</div>
 </body>
