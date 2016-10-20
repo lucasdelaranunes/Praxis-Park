@@ -1,0 +1,57 @@
+/* Header */
+
+.header {
+    display: inline-block;
+    background-color: #1f6aac;
+    width: 100%;
+    color: #f0f0f0;
+}
+
+.label-user {
+    float: right;
+    padding: 5px 10px;
+}	
+
+.glyphicon {
+    font-size: 1.4em;
+    padding: 6px;
+}
+
+/* -- Header --*/
+
+#succes-logo {
+	width: 30%;
+	height: 30%;
+}
+
+.payment-data .box {
+	border: 2px solid black;
+}
+
+.payment-value {
+	float-right;	
+}
+
+.payment-data {
+	overflow: hidden;
+}
+
+.label-title {
+	font-size: 1.6em;
+	color: #1f6aac;
+	margin-bottom: 0px;
+}
+
+.label-simple {
+	margin-bottom: 0px;	
+}
+
+.label-subtitle {
+	font-size: 0.8em;
+}
+
+#payment-value {
+	margin-top: auto;
+	font-size: 1.8em;
+	color: #1f6aac;
+}

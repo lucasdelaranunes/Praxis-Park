@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pagamento</title>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Header -->
+	<div class="header">
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="label-menu">
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+				</div>
+			</div>
+			<div class="col-xs-9">
+				<div class="label-user">
+					Olá, Usuário
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		
+		<div class="row text-center">
+			<p id="label-data">Dados de pagamento</p>
+				
+			<div class="payment-data">
+				<div class="col-xs-6">
+					<p class="label-title">Total</p>
+					<p class="label-simple">Data: 01/01/2001</p>
+					<p class="label-simple">Horário 00:00</p>
+				</div>
+				<div class="col-xs-6">
+					<p id="payment-value">R$ 6,50</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row text-center">
+			<p class="label-title">Pagamento Débito</p>
+			<p class="label-subtitle">Complete as informações abaixo para realizar o pagamento</p>
+
+			<form>
+				<div class="row">
+					<label for="card-number">Número do cartão:</label>
+				</div>
+				<div class="row">
+					<input type="text" name="card-number">
+				</div>
+
+				<div class="row">
+					<label for="card-date">Data de validade:</label>
+				</div>
+
+				<div class="row">
+					<input type="text" name="card-date-month" placeholder="Mês" class="col-xs-6"> 
+					<input type="text" name="card-date-year" placeholder="Ano" class="col-xs-6">
+				</div>
+				
+				<div class="row">
+					<label for="card-number-verify">Código verificador</label>
+				</div>
+
+				<div class="row">
+					<input type="text" name="card-number-verify">
+				</div>
+
+				<input type="submit" name="Confirmar Pagamento" class="btn btn-primary btn-block">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

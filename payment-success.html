@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pagamento</title>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Header -->
+	<div class="header">
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="label-menu">
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+				</div>
+			</div>
+			<div class="col-xs-9">
+				<div class="label-user">
+					Olá, Usuário
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		
+		<div class="row text-center">
+			<p id="label-data">Dados de pagamento</p>
+				
+			<div class="payment-data">
+				<div class="col-xs-6">
+					<p class="label-title">Total</p>
+					<p class="label-simple">Data: 01/01/2001</p>
+					<p class="label-simple">Horário 00:00</p>
+				</div>
+				<div class="col-xs-6">
+					<p id="payment-value">R$ 6,50</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="payment-result text-center">
+			<img src="img/payment-succes.png" id="succes-logo">
+			<p>Pagamento realizado com sucesso</p>
+		</div>
+
+		<div class="payment-buttons">
+			<button class="btn btn btn-primary btn-block">Enviar comprovante por e-mail</button>
+			<button class="btn btn btn-primary btn-block">Sair</button>
+		</div>
+	</div>
+</body>
+</html>
