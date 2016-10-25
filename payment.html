@@ -2,32 +2,70 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pagamento</title>
 
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    	$(document).ready(function() {
+		    $("#menu-toggle").click(function(e) {
+		        $("#wrapper").toggleClass("toggled");
+		        console.log('entrou');
+		    });
+    	});
+    </script>
 </head>
 <body>
-	<!-- Header -->
-	<div class="header">
-		<div class="row">
-			<div class="col-xs-3">
-				<div class="label-menu">
-					<span class="glyphicon glyphicon-menu-hamburger"></span>
+	<div id="wrapper">
+		<!-- Header -->
+		<div class="header">
+			<!-- Sidebar -->
+	        <div id="sidebar-wrapper">
+	            <ul class="sidebar-nav">
+	                <li class="sidebar-brand">
+	                    <a href="#">
+	                        Menu
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">Dashboard</a>
+	                </li>
+	                <li>
+	                    <a href="#">Shortcuts</a>
+	                </li>
+	            </ul>
+	        </div>
+	        <!-- /#sidebar-wrapper -->
+			<div class="row">
+				<div class="col-xs-3">
+					<div class="label-menu">
+						<span class="glyphicon glyphicon-menu-hamburger" id="menu-toggle">
+						</span>
+					</div>
 				</div>
-			</div>
-			<div class="col-xs-9">
-				<div class="label-user">
-					Olá, Usuário
+				<div class="col-xs-9">
+					<div class="label-user">
+						Olá, Usuário
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container">
-		
 		<div class="row text-center">
-			<p id="label-data">Dados de pagamento</p>
+			<p id="label-data"><h4>Dados de pagamento</h4></p>
 				
 			<div class="payment-data">
 				<div class="col-xs-6">
@@ -42,35 +80,29 @@
 		</div>
 
 		<div class="row text-center">
+			<br />
 			<p class="label-title">Pagamento Débito</p>
 			<p class="label-subtitle">Complete as informações abaixo para realizar o pagamento</p>
 
 			<form>
-				<div class="row">
+				<div class="form-group">
 					<label for="card-number">Número do cartão:</label>
-				</div>
-				<div class="row">
-					<input type="text" name="card-number">
+					<input type="text" class="form-control" id="card-number">
 				</div>
 
-				<div class="row">
-					<label for="card-date">Data de validade:</label>
+				<div class="form-group">
+					<label for="card-date">Data de Validade:</label>
+
+					<input type="text" class="form-control text-center col-xs-6" id="card-date-month" placeholder="Mês">
+					<input type="text" class="form-control text-center col-xs-6" id="card-date-year" placeholder="Ano">
 				</div>
 
-				<div class="row">
-					<input type="text" name="card-date-month" placeholder="Mês" class="col-xs-6"> 
-					<input type="text" name="card-date-year" placeholder="Ano" class="col-xs-6">
-				</div>
-				
-				<div class="row">
-					<label for="card-number-verify">Código verificador</label>
+				<div class="form-group">
+					<label for="card-number">Código verificador:</label>
+					<input type="text" class="form-control" id="card-number">
 				</div>
 
-				<div class="row">
-					<input type="text" name="card-number-verify">
-				</div>
-
-				<input type="submit" name="Confirmar Pagamento" class="btn btn-primary btn-block">
+				<input type="submit" name="confirm-payment" value="Confirmar Pagamento" class="btn btn-primary btn-block">
 			</form>
 		</div>
 	</div>

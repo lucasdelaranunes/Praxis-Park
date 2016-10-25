@@ -5,6 +5,7 @@
     background-color: #1f6aac;
     width: 100%;
     color: #f0f0f0;
+    padding: 5px 0 5px 5px;
 }
 
 .label-user {
@@ -47,7 +48,7 @@
 }
 
 .label-subtitle {
-	font-size: 0.8em;
+	font-size: 1em;
 }
 
 #payment-value {
