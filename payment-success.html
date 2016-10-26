@@ -2,32 +2,70 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pagamento</title>
 
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    	$(document).ready(function() {
+		    $("#menu-toggle").click(function(e) {
+		        $("#wrapper").toggleClass("toggled");
+		        console.log('entrou');
+		    });
+    	});
+    </script>
 </head>
 <body>
-	<!-- Header -->
-	<div class="header">
-		<div class="row">
-			<div class="col-xs-3">
-				<div class="label-menu">
-					<span class="glyphicon glyphicon-menu-hamburger"></span>
+	<div id="wrapper">
+		<!-- Header -->
+		<div class="header">
+			<!-- Sidebar -->
+	        <div id="sidebar-wrapper">
+	            <ul class="sidebar-nav">
+	                <li class="sidebar-brand">
+	                    <a href="#">
+	                        Menu
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">Dashboard</a>
+	                </li>
+	                <li>
+	                    <a href="#">Shortcuts</a>
+	                </li>
+	            </ul>
+	        </div>
+	        <!-- /#sidebar-wrapper -->
+			<div class="row">
+				<div class="col-xs-3">
+					<div class="label-menu">
+						<span class="glyphicon glyphicon-menu-hamburger" id="menu-toggle">
+						</span>
+					</div>
 				</div>
-			</div>
-			<div class="col-xs-9">
-				<div class="label-user">
-					Olá, Usuário
+				<div class="col-xs-9">
+					<div class="label-user">
+						Olá, Usuário
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		
+	<div class="container">		
 		<div class="row text-center">
-			<p id="label-data">Dados de pagamento</p>
+			<p id="label-data"><h4>Dados de pagamento</h4></p>
 				
 			<div class="payment-data">
 				<div class="col-xs-6">
@@ -48,7 +86,9 @@
 
 		<div class="payment-buttons">
 			<button class="btn btn btn-primary btn-block">Enviar comprovante por e-mail</button>
-			<button class="btn btn btn-primary btn-block">Sair</button>
+			<button class="btn btn btn-primary btn-block">
+				Sair
+			</button>
 		</div>
 	</div>
 </body>
