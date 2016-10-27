@@ -15,7 +15,11 @@
 
 .glyphicon {
     font-size: 1.4em;
-    padding: 6px;
+    padding-right: 6px;
+}
+
+#menu-toggle {
+	padding: 6px;
 }
 
 /* -- Header --*/
@@ -55,4 +59,12 @@
 	margin-top: auto;
 	font-size: 1.8em;
 	color: #1f6aac;
+}
+
+#image-logo {
+	width: 300px;
+}
+
+.center-align {
+    align-items: center;
 }
