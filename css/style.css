@@ -18,8 +18,84 @@
     padding-right: 6px;
 }
 
+#usuicon {
+	font-size: 5em;
+}
+
+#usunome {
+	position: relative;
+	bottom: 15px;
+}
+
+#qrcode {
+	color: #1f6aac;
+	position: relative;
+	bottom: 30px;
+}
+
+#navicon {
+	color: #1f6aac;
+	font-size: 3em;
+	position: relative;
+	left: 50px;
+}
+
+#txlocal {
+	color: gray;
+	position: relative;
+	bottom: 50px;
+	right: 30px;
+}
+
+#txtel {
+	color: gray;
+	position: relative;
+	bottom: 55px;
+	left: 10px;
+}
+
+
+#txende {
+	color: gray;
+	position: relative;
+	bottom: 60px;
+	left: 15px;
+}
+
+#txdata {
+	position: relative;
+	bottom: 30px;
+	right: 58px;
+}
+
+#txentrada {
+	position: relative;
+	bottom: 20px;
+	right: 65px;
+}
+
+#txsaida {
+	position: relative;
+	bottom: 50px;
+	left: 110px;
+}
+
+#preco {
+	position: relative;
+	bottom: 40px;
+	color: #1f6aac;
+}
+
+#voltar {
+	margin-top: 5px;
+}
+
 #menu-toggle {
 	padding: 6px;
+}
+
+#criar {
+	margin-top: 30px;
 }
 
 /* -- Header --*/
@@ -64,6 +140,14 @@
 #image-logo {
 	width: 300px;
 }
+
+#image-logocad {
+	width: 50px;
+	margin-left: 50px;
+	margin-top: 5px;
+	margin-bottom: 50px;
+}
+
 
 .center-align {
     align-items: center;
