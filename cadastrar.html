@@ -16,11 +16,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
     <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-	<div class="container">
+	<div id="container">
 		<!-- Aqui fica o conteudo -->
 		<div class="col-xs-4">
 			<a href="login.html" class="glyphicon glyphicon-chevron-left" aria-hidden="true" id="voltar"></a>
@@ -31,6 +31,7 @@
 		<div class="col-xs-4">
 			<img src="img/logo.png" id="image-logocad">
 		</div>
+		
 		<div class="form-group">
 			<label for="card-number">Nome de usuário*</label>
 			<input type="text" class="form-control" id="username">
@@ -46,7 +47,7 @@
 		</div>
 		<div class="form-group">
 			<label for="card-number">Email*</label>
-			<input type="email" class="form-control" id="Email" placeholder="exemplo@exemplo.com">
+			<input type="email" class="form-control" id="email" placeholder="exemplo@exemplo.com">
 		</div>
 		<div class="form-group">
 			<label for="card-number">Número de Celular</label>
@@ -59,8 +60,8 @@
       			Li e aceito todos os <a href="#">Termos de uso.</a>
     		</label>
   		</div>
-
-		<a href="user.html" class="btn btn-primary btn-block" id="criar">Criar</a>
+  		<button type="button" class="btn btn-primary btn-block" onclick="loadXMLDoc()">Criar</button>
+		<!-- <a href="user.html" class="btn btn-primary btn-block" id="criar" onclick="loadXMLDoc()">Criar</a> -->
 	</div>
 </body>
 </html>
