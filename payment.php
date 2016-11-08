@@ -63,7 +63,7 @@
 				</div>
 
 				<!-- <input type="submit" name="confirm-payment" value="Confirmar Pagamento" class="btn btn-primary btn-block"> -->
-				<a href="payment-success.html" class="btn btn-primary btn-block">Confirmar Pagamento</a>
+				<a href="payment-success.php" class="btn btn-primary btn-block">Confirmar Pagamento</a>
 
 			</form>
 		</div>

@@ -42,7 +42,7 @@
 			<h4 id="txentrada">Entrada: 15:30</h4>
 			<h4 id="txsaida">Saida: 15:55</h4>
 			<h1 id="preco">R$ 4,50</h1>
-			<a href="payment.html" class="btn btn-primary btn-block" id="criar">Pagar</a>
+			<a href="payment.php" class="btn btn-primary btn-block" id="criar">Pagar</a>
 			<a href="#">Não consigo efetuar o pagamento.</a>
 		</div>
 	</div>
