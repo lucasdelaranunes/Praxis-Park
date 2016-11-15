@@ -12,12 +12,12 @@
 	<link rel="stylesheet" href="css/sidebar.css">
 
 	<!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/lib/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
 
-    <script src="js/script.js"></script>
+    <script src="js/side-menu.js"></script>
 </head>
 <body>
 	<?php
@@ -44,28 +44,29 @@
 			<p class="label-title">Efetuar Pagamento</p>
 			<p class="label-subtitle">Complete as informações abaixo para realizar o pagamento</p>
 
-			<form>
-				<div class="form-group">
-					<label for="card-number">Número do cartão:</label>
-					<input type="text" class="form-control" id="card-number">
-				</div>
+			<div class="container">
+				<form>
+					<div class="form-group">
+						<label for="card-number">Número do cartão:</label>
+						<input type="text" class="form-control" id="card-number">
+					</div>
 
-				<div class="form-group">
-					<label for="card-date">Data de Validade:</label>
+					<div class="form-group">
+						<label for="card-date">Data de Validade:</label>
 
-					<input type="text" class="form-control text-center col-xs-6" id="card-date-month" placeholder="Mês">
-					<input type="text" class="form-control text-center col-xs-6" id="card-date-year" placeholder="Ano">
-				</div>
+						<input type="text" class="form-control text-center col-xs-6" id="card-date-month" placeholder="Mês">
+						<input type="text" class="form-control text-center col-xs-6" id="card-date-year" placeholder="Ano">
+					</div>
 
-				<div class="form-group">
-					<label for="card-number">Código verificador:</label>
-					<input type="text" class="form-control" id="card-number">
-				</div>
+					<div class="form-group">
+						<label for="card-number">Código verificador:</label>
+						<input type="text" class="form-control" id="card-number">
+					</div>
 
-				<!-- <input type="submit" name="confirm-payment" value="Confirmar Pagamento" class="btn btn-primary btn-block"> -->
-				<a href="payment-success.php" class="btn btn-primary btn-block">Confirmar Pagamento</a>
-
-			</form>
+					<!-- <input type="submit" name="confirm-payment" value="Confirmar Pagamento" class="btn btn-primary btn-block"> -->
+					<a href="payment-success.php" class="btn btn-primary btn-block">Confirmar Pagamento</a>
+				</form>
+			</div>
 		</div>
 	</div>
 </body>

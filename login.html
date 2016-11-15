@@ -12,12 +12,12 @@
 	<link rel="stylesheet" href="css/sidebar.css">
 
 	<!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/lib/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
 
-    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
 </head>
 
 <body>
@@ -27,17 +27,20 @@
 		</div>
 
 		<h4 class="text-center">Acesse sua conta</h4>
-		<div class="form-group">
-			<label for="card-number">Usuário</label>
-			<input type="text" class="form-control" id="card-number">
-		</div>
 
-		<div class="form-group">
-			<label for="card-number">Senha</label>
-			<input type="password" class="form-control" id="card-number">
-		</div>
+		<form>
+			<div class="form-group">
+				<label for="card-number">Usuário</label>
+				<input type="text" class="form-control" name="email">
+			</div>
 
-		<a href="ticket-validation.html" class="btn btn-primary btn-block">Entrar</a>
+			<div class="form-group">
+				<label for="card-number">Senha</label>
+				<input type="password" class="form-control" name="pwd">
+			</div>
+		</form>
+
+		<button class="btn btn-primary btn-block" onclick="doLogin()">Entrar</button>
 		
 		<br />
 		<div class="row">
