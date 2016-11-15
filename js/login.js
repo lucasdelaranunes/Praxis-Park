@@ -20,6 +20,7 @@ function doLogin() {
 		        var rowsLength = restifyData.restify.rows.length;
 
 		        var isValidLogin = false;
+		        var validLoginData;
 
 		        // Checks if login is valid
                 for (i = 0; i < rowsLength; i++) {
@@ -28,10 +29,16 @@ function doLogin() {
                     
                     if (currentEmail == loginEmail && currentPwd == loginPwd) {
                     	isValidLogin = true;
+
+                    	// Defines the object with valid login data to create the session
+                    	validLoginData = restifyData.restify.rows[i].values;
                     }
                 }
 
                 if (isValidLogin) {
+                	// Creates session with user data on local storage
+                	localStorage.setItem('prp_user', JSON.stringify(validLoginData));
+
                 	alert("Login é válido");
                 	location.href = 'user.php';
                 } else {
