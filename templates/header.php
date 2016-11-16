@@ -1,3 +1,4 @@
+
 <div id="wrapper">
 	<!-- Header -->
 	<div class="header">
@@ -41,7 +42,7 @@
 				</div>
 			</div>
 			<div class="col-xs-9">
-				<div class="label-user">
+				<div id ="userName" class="label-user">
 					Olá, Usuário
 				</div>
 			</div>

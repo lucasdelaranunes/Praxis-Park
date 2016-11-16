@@ -18,9 +18,12 @@
     <script src="js/lib/bootstrap.min.js"></script>
 
     <script src="js/side-menu.js"></script>
+    <script src="js/user.js"></script>
+
 </head>
 
-<body>
+<body onload="userSession();">
+
 	<?php
 	require_once('templates/header.php');
 	?>
@@ -29,7 +32,7 @@
 		<div class="text-center">
 			<span class="glyphicon glyphicon-user" aria-hidden="true" id="usuicon"></span>
 		</div>
-		<h3 class="text-center" id="usunome">Usuário</h3>
+		<h3 class="text-center" id="usunome"></h3>
 		<h2 class="text-center" id="qrcode">GEH8H5</h2>
 		<div class="text-center">
 			<div class="text-left">

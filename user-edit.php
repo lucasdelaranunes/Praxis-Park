@@ -16,10 +16,10 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/lib/bootstrap.min.js"></script>
-
+    <script src="js/user.js"></script>
     <script src="js/side-menu.js"></script>
 </head>
-<body>
+<body onload="userSession();">
 	<?php
 	require_once('templates/header.php')
 	?>
