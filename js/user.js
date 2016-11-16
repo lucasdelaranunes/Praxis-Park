@@ -6,3 +6,9 @@ function userSession() {
 		document.getElementById("usunome").innerHTML = userName;
 	}
 }
+
+function endUserSession () {
+	localStorage.removeItem('prp_user');
+	alert("Deslogado com sucesso!");
+	location.href = 'login.html';
+}

@@ -26,7 +26,7 @@
 	<div class="container">		
 		<!-- Aqui fica o conteudo -->
 		<div class="col-xs-4">
-			<a href="user.html" class="glyphicon glyphicon-chevron-left" aria-hidden="true" id="voltar"></a>
+			<a href="user.php" class="glyphicon glyphicon-chevron-left" aria-hidden="true" id="voltar"></a>
 		</div>
 		<div class="col-xs-4">
 			<h4 class="text-center">Editar Dados</h4>

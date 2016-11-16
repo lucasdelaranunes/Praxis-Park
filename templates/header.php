@@ -27,9 +27,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="login.html">
-                    	<span class="glyphicon glyphicon-off"></span>Sair
-                    </a>
+                    <span class="glyphicon glyphicon-off" onclick="endUserSession()"></span>Sair
                 </li>
             </ul>
         </div>
