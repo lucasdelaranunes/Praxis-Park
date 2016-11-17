@@ -17,6 +17,10 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/lib/bootstrap.min.js"></script>
 
+    <!-- Font Awesome's CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- App's JavaScript -->
     <script src="js/side-menu.js"></script>
     <script src="js/user.js"></script>
 
@@ -29,25 +33,73 @@
 	?>
 	
 	<div class="container">		
-		<div class="text-center">
-			<span class="glyphicon glyphicon-user" aria-hidden="true" id="usuicon"></span>
-		</div>
-		<h3 class="text-center" id="usunome"></h3>
-		<h2 class="text-center" id="qrcode">GEH8H5</h2>
-		<div class="text-center">
-			<div class="text-left">
-				<span class="glyphicon glyphicon-map-marker" id="navicon" aria-hidden="true"></span>
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
 			</div>
-			<p id="txlocal">BH Shopping</p>
-			<p id="txtel">Telefone: (31) 3228-4213</p>
-			<p id="txende">BR-356, Belo Horizonte - MG 30320-900</p>
-			<h4 id="txdata">Data: 27/10/2016</h4>
-			<h4 id="txentrada">Entrada: 15:30</h4>
-			<h4 id="txsaida">Saida: 15:55</h4>
-			<h1 id="preco">R$ 4,50</h1>
-			<a href="payment.php" class="btn btn-primary btn-block" id="criar">Pagar</a>
-			<a href="#">Não consigo efetuar o pagamento.</a>
 		</div>
+
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<h2 class="text-center" id="usunome">Username</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<h3 class="text-center" id="qrcode">GEH8H5</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-2">
+				<i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
+			</div>
+			
+			<div class="col-xs-10">	
+				<address>
+					<a id="txlocal"><strong>BH Shopping</strong></a><br>
+					<a id="txende">BR-356, Belo Horizonte</a><br>
+					<a id="txestado">MG - 30320-900</a><br>
+					<a id="txtel">(31) 3228-4213</a><br>
+				</address>
+			</div>
+		</div>
+			
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<h4 id="txdata">Data: 27/10/2016</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-6 text-center">
+				<h4 id="txentrada">Entrada: 15:30</h4>
+			</div>
+
+			<div class="col-xs-6 text-center">
+				<h4 id="txsaida">Saida: 15:55</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<h1 id="preco">R$ 4,50</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<a href="payment.php" class="btn btn-primary btn-block" id="criar">Pagar</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 text-center">
+			 	<a href="#">Não consigo efetuar o pagamento.</a>
+			</div>
+		</div>
+
 	</div>
 
 </body>

@@ -7,7 +7,7 @@ function loadXMLDoc() {
     xmlhttp.open("POST", "http://www.smartsoft.com.br/webservice/restifydb/Employees/prp_cliente", true);
 	xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 	xmlhttp.onreadystatechange=function() {
-		if (xmlhttp.readyState == 4) { 
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) { 
 			window.alert ("Dados adicionados com sucesso.");
 			location.href = 'login.html';
 		}
