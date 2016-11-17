@@ -20,6 +20,30 @@ function userUpdate () {
 	var newPassword = document.getElementById("password").value;
 	var newEmail = document.getElementById("email").value;
 	var newPhone = document.getElementById("celnumber").value;
+	
+	// Conditions to avoid that blank fields be sent to the DB
+	if (newPassword == "") {
+		newPassword = mySession.senhacliente.value;
+	} else {
+		mySession.senhacliente.value = newPassword;
+		localStorage.setItem('prp_user', JSON.stringify(mySession));
+	}
+
+	if (newEmail == "") {
+		newEmail = mySession.emailcliente.value;
+	} else {
+		mySession.emailcliente.value = newEmail;
+		localStorage.setItem('prp_user', JSON.stringify(mySession));
+	}
+
+	if (newPhone == "") {
+		newPhone = mySession.celularcliente.value;
+	} else {
+		mySession.celularcliente.value = newPhone;
+		localStorage.setItem('prp_user', JSON.stringify(mySession));
+	}
+	// End of conditions
+
 	var data = {
 		"senhacliente": newPassword,
 		"emailcliente": newEmail,
@@ -36,3 +60,7 @@ function userUpdate () {
 		}
 	}
 }
+
+
+	
+	

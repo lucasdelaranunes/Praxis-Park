@@ -27,7 +27,10 @@
                     </a>
                 </li>
                 <li>
-                    <span class="glyphicon glyphicon-off" onclick="endUserSession()"></span>Sair
+                    <a onclick="endUserSession()">
+                        <span class="glyphicon glyphicon-off" onclick="endUserSession()"></span>
+                        Sair
+                    </a>
                 </li>
             </ul>
         </div>
