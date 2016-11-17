@@ -51,7 +51,7 @@
 			</div>
 		</div>
 
-		<div class="row ">
+		<div class="row">
 			<div class="col-xs-2">
 				<i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
 			</div>
