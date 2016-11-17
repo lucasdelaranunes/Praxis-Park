@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
 /* Header */
 
 .header {
@@ -20,6 +25,7 @@
 #usunome {
 	position: relative;
 	bottom: 15px;
+	font-family: 'Raleway', sans-serif;
 }
 
 #qrcode {
@@ -100,4 +106,12 @@
 
 .ticket-data {
 	margin-top: 50%;
+}
+
+html > body > div.container > div.row > div.col-xs-2 > i.fa.fa-map-marker.fa-5x {
+	padding-left: 280%;
+}
+
+html > body > div.container > div.row > div.col-xs-10 {
+	padding-left: 24%;
 }

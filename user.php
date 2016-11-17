@@ -51,7 +51,7 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row ">
 			<div class="col-xs-2">
 				<i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
 			</div>
@@ -68,7 +68,7 @@
 			
 		<div class="row">
 			<div class="col-xs-12 text-center">
-				<h4 id="txdata">Data: 27/10/2016</h4>
+				<h4 id="txdata">27/10/2016</h4>
 			</div>
 		</div>
 
