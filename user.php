@@ -11,22 +11,21 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/sidebar.css">
 
-	<!-- jQuery -->
+	<!-- Libs -->
     <script src="js/lib/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/lib/bootstrap.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
 
     <!-- Font Awesome's CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
     <!-- App's JavaScript -->
+    <script src="js/header.js"></script>
     <script src="js/side-menu.js"></script>
     <script src="js/user.js"></script>
 
 </head>
 
-<body onload="userSession();">
+<body onload="userSession()">
 
 	<?php
 	require_once('templates/header.php');
@@ -73,12 +72,8 @@
 		</div>
 
 		<div class="row">
-			<div class="col-xs-6 text-center">
+			<div class="col-xs-12 text-center">
 				<h4 id="txentrada">Entrada: 15:30</h4>
-			</div>
-
-			<div class="col-xs-6 text-center">
-				<h4 id="txsaida">Saida: 15:55</h4>
 			</div>
 		</div>
 

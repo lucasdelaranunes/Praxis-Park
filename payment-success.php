@@ -11,12 +11,12 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/sidebar.css">
 
-	<!-- jQuery -->
+	<!-- Libs -->
     <script src="js/lib/jquery.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/lib/bootstrap.min.js"></script>
-
+	<!-- App's JavaScript -->
+	<script src="js/header.js"></script>
     <script src="js/side-menu.js"></script>
 </head>
 <body>

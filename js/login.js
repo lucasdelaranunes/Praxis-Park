@@ -39,7 +39,7 @@ function doLogin() {
                 	// Creates session with user data on local storage
                 	localStorage.setItem('prp_user', JSON.stringify(validLoginData));
 
-                	alert("Login é válido");
+                	alert("Bem vindo " + validLoginData.nmcliente.value + "!");
                 	location.href = 'user.php';
                 } else {
                 	alert("Login nao é válido");

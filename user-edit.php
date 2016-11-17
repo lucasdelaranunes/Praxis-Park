@@ -38,20 +38,20 @@
 				<img src="img/logo.png" id="image-logocad">
 			</div>
 			<div class="form-group">
+				<label for="card-number">E-mail</label>
+				<input type="email" class="form-control" id="email" >
+			</div>
+			<div class="form-group">
+				<label for="card-number">Número de Celular</label>
+				<input type="tel" class="form-control" id="celnumber">
+			</div>
+			<div class="form-group">
 				<label for="card-number">Nova senha</label>
 				<input type="password" class="form-control" id="password" placeholder="6-10 Caracteres">
 			</div>
 			<div class="form-group">
 				<label for="card-number">Confirmação de nova senha</label>
 				<input type="password" class="form-control" id="passwordconfirm" placeholder="6-10 Caracteres">
-			</div>
-			<div class="form-group">
-				<label for="card-number">Trocar email</label>
-				<input type="email" class="form-control" id="email" placeholder="exemplo@exemplo.com">
-			</div>
-			<div class="form-group">
-				<label for="card-number">Trocar número de Celular</label>
-				<input type="tel" class="form-control" id="celnumber" placeholder="(00) 00000-0000">
 			</div>
 
 			<button class="btn btn-primary btn-block" id="criar" onclick="userUpdate()">Modificar</button>

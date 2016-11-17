@@ -1,4 +1,3 @@
-
 <div id="wrapper">
 	<!-- Header -->
 	<div class="header">
@@ -21,7 +20,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="user-edit.php">
+                    <a onclick=validateUser()>
                     	<span class="glyphicon glyphicon-pencil"></span>
                     	Editar dados
                     </a>

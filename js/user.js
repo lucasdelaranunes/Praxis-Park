@@ -1,13 +1,24 @@
 function userSession() {
 	var mySession = JSON.parse(localStorage.getItem('prp_user'));
-	var userName = mySession.nmcliente.value;
-	document.getElementById("userName").innerHTML = 'Olá, ' + userName;
-	if (document.getElementById("usunome") !== null) { 
-		document.getElementById("usunome").innerHTML = userName;
+
+	if(mySession) {
+		var userName = mySession.nmcliente.value;
+		var screenName = location.href.split('/')[location.href.split('/').length -1];
+		
+		document.getElementById("userName").innerHTML = 'Olá, ' + userName;
+		if (document.getElementById("usunome") !== null) { 
+			document.getElementById("usunome").innerHTML = userName;
+		}
+		
+		if (screenName == 'user-edit.php') {
+			// Load user session data on fields
+			document.getElementById("email").value = mySession.emailcliente.value;
+			document.getElementById("celnumber").value = mySession.celularcliente.value;
+		}
 	}
 }
 
-function endUserSession () {
+function endUserSession() {
 	localStorage.removeItem('prp_user');
 	alert("Deslogado com sucesso!");
 	location.href = 'login.html';
