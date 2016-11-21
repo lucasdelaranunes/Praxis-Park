@@ -39,11 +39,11 @@
 			</div>
 			<div class="form-group">
 				<label for="card-number">E-mail</label>
-				<input type="email" class="form-control" id="email" >
+				<input type="email" class="form-control" id="email" onclick="clearField(this.id)" onfocusout="notBlank(this.id)"">
 			</div>
 			<div class="form-group">
 				<label for="card-number">Número de Celular</label>
-				<input type="tel" class="form-control" id="celnumber">
+				<input type="tel" class="form-control" id="celnumber" onclick="clearField(this.id)" onfocusout="notBlank(this.id)">
 			</div>
 			<div class="form-group">
 				<label for="card-number">Nova senha</label>
