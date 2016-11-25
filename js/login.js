@@ -40,7 +40,7 @@ function doLogin() {
                 	localStorage.setItem('prp_user', JSON.stringify(validLoginData));
 
                 	alert("Bem vindo " + validLoginData.nmcliente.value + "!");
-                	location.href = 'user.php';
+                	location.href = 'ticket-validation.html';
                 } else {
                 	alert("Login nao é válido");
                 }
