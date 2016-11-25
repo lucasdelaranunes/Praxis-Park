@@ -10,13 +10,13 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Libs -->
     <script src="js/lib/jquery.js"></script>
 	<script src="js/lib/bootstrap.min.js"></script>
-
-    <!-- Font Awesome's CDN -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="js/lib/sweetalert.min.js"></script>
     
     <!-- App's JavaScript -->
     <script src="js/header.js"></script>

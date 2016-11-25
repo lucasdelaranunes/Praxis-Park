@@ -3,7 +3,7 @@ function doLogin() {
 	var pwd = document.forms[0].pwd.value;
 
 	if (email == "" || pwd == "") {
-		alert("Preencha todos os dados para prosseguir ou entre sem logar");
+		swal("Preencha todos os dados para prosseguir ou entre sem logar");
 	} else {
 		var xmlhttp = new XMLHttpRequest();
         
@@ -39,10 +39,17 @@ function doLogin() {
                 	// Creates session with user data on local storage
                 	localStorage.setItem('prp_user', JSON.stringify(validLoginData));
 
-                	alert("Bem vindo " + validLoginData.nmcliente.value + "!");
-                	location.href = 'ticket-validation.html';
+					swal({
+							title: "Bem vindo " + validLoginData.nmcliente.value + "!",
+							text: "",
+							type: "success"
+						},
+						function() {
+							location.href = 'ticket-validation.html';
+						}
+					);
                 } else {
-                	alert("Login nao é válido");
+                	swal("Login nao é válido");
                 }
 		    }
 		}

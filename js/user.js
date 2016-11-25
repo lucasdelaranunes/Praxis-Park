@@ -20,8 +20,15 @@ function userSession() {
 
 function endUserSession() {
 	localStorage.removeItem('prp_user');
-	alert("Deslogado com sucesso!");
-	location.href = 'login.html';
+	swal({
+			title: "Deslogado com sucesso!",
+			text: "",
+			type: "success"
+		},
+		function() {
+			location.href = 'login.html';
+		}
+	);
 }
 
 function userUpdate () {
@@ -36,7 +43,7 @@ function userUpdate () {
 	// Validate the password
 	if (newPassword != passwordConfirmation) {
 		event.preventDefault();
-		alert ("As senhas são diferentes!")
+		swal("As senhas são diferentes!")
 	} else {
 		// Conditions to avoid that blank password's fields be sent to the DB
 		if (newPassword == "") {
@@ -57,14 +64,15 @@ function userUpdate () {
 			"senhacliente": newPassword,
 			"emailcliente": newEmail,
 			"celularcliente": newPhone
-		}
+		};
+
 		var dataToSend = '_data=' + JSON.stringify(data);
 		xmlhttp.open("PUT", "http://www.smartsoft.com.br/webservice/restifydb/Employees/prp_cliente/" + userId, true);
 		xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 		xmlhttp.send(dataToSend);
 		xmlhttp.onreadystatechange=function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) { 
-				window.alert ("Dados alterados com sucesso.");
+				swal ("Dados alterados com sucesso.");
 				location.href = 'user.php';
 			}
 		} //onreadystatechange

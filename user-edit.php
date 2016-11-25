@@ -10,11 +10,11 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/sidebar.css">
+		<link rel="stylesheet" href="css/sweetalert.css">
 
-		<!-- jQuery -->
+		<!-- Libs -->
 	    <script src="js/lib/jquery.js"></script>
-
-	    <!-- Bootstrap Core JavaScript -->
+		<script src="js/lib/sweetalert.min.js"></script>
 	    <script src="js/lib/bootstrap.min.js"></script>
 	    
 	    <!-- App's JavaScript -->
